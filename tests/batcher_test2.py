@@ -10,9 +10,9 @@ def main2():
     batch_input_shape = [None, NUM_FRAMES, NUM_FBANKS, 1]
     dsm = DeepSpeakerModel(batch_input_shape, include_softmax=False)
     dsm.m.compile(optimizer='adam', loss=deep_speaker_loss)
-    dsm.m.load_weights('/Users/premy/deep-speaker/ResCNN_checkpoint_102.h5', by_name=True)
+    dsm.m.load_weights('/home/ubuntu/PycharmProjects/deep-speaker/ResCNN_triplet_training_checkpoint_265.h5', by_name=True)
     dsm.m.summary()
-    batcher = LazyTripletBatcher(working_dir='/Users/premy/deep-speaker', max_length=NUM_FRAMES, model=dsm)
+    batcher = LazyTripletBatcher(working_dir='/home/ubuntu/PycharmProjects/deep-speaker', max_length=NUM_FRAMES, model=dsm)
     bs = 18
 
     print(np.mean(

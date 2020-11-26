@@ -52,7 +52,7 @@ def main():
         select = False
     print('select', select)
 
-    working_dir = '/media/philippe/8TB/deep-speaker'
+    working_dir = '/home/ubuntu/PycharmProjects/deep-speaker'
     # by construction this  losses should be much higher than the normal losses.
     # we select batches this way.
     batch_input_shape = [None, NUM_FRAMES, NUM_FBANKS, 1]

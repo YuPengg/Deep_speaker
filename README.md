@@ -112,3 +112,4 @@ f-measure = 0.789, true positive rate = 0.733, accuracy = 0.996, equal error rat
 $ export CUDA_VISIBLE_DEVICES=0; python cli.py test-model --working_dir ~/.deep-speaker-wd/triplet-training/ --checkpoint_file checkpoints-triplets/ResCNN_checkpoint_265.h5
 f-measure = 0.849, true positive rate = 0.798, accuracy = 0.997, equal error rate = 0.025
 ```
+# Deep_speaker
